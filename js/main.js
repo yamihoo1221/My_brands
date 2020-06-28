@@ -5,8 +5,8 @@
   const summary = document.querySelectorAll("summary");
   summary.forEach((summary, index) => {
     summary.style.display = "none";
-    summary.style.opacity = 0;
-    summary.style.opacity = 1;
+    // summary.style.opacity = 0;
+    // summary.style.opacity = 1;
   });
   // ヘッダー、メニューのアニメーション
   const header = document.getElementById("header");
@@ -22,7 +22,6 @@
       text.style.display = "none";
     } else {
       text.style.display = "block";
-      summary.style.opacity = 1;
     }
     anime({
       targets: "#text1",
@@ -116,6 +115,7 @@
   // アイコンクリックしてメニューを表示
   const icon = document.getElementById("mobileAside");
   const menu = document.querySelector("aside");
+  const input = document.querySelectorAll('input');
 
   icon.animate([{ opacity: "0" }, { opacity: "1" }], 2000);
 
@@ -128,6 +128,7 @@
       icon.style.display = "block";
       menu.style.display = "block";
       menu.animate([{ opacity: "0" }, { opacity: "1" }], 1500);
+      icon.removeEventListener('click',iconBtn)
       icon.style.display = "none";
     }
   }
