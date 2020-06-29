@@ -77,9 +77,8 @@ img {
   }
 
   input[type='checkbox']:checked ~input{
-    display: none;
+  left: -50vw;
   }
-
 
   input[type='checkbox']:checked ~ aside{
     display: block;
