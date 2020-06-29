@@ -75,7 +75,9 @@ img {
     cursor: pointer;
   }
 
-  
+  input[type='checkbox']:checked ~ aside{
+    display: block;
+  }
 
   aside {
     display: none;
