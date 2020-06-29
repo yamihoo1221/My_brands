@@ -15,6 +15,12 @@
   header.animate([{ opacity: "0" }, { opacity: "1" }], 1500);
   aside.animate([{ opacity: "0" }, { opacity: "1" }], 1500);
 
+  function doReload(){
+    window.location.reload();
+  }
+
+  
+
   // NEWSここから
   function btn1() {
     const text = document.getElementById("text1");
@@ -115,7 +121,6 @@
   // アイコンクリックしてメニューを表示
   const icon = document.getElementById("mobileAside");
   const menu = document.querySelector("aside");
-  const input = document.querySelectorAll('input');
 
   icon.animate([{ opacity: "0" }, { opacity: "1" }], 2000);
 
@@ -128,7 +133,6 @@
       icon.style.display = "block";
       menu.style.display = "block";
       menu.animate([{ opacity: "0" }, { opacity: "1" }], 1500);
-      icon.removeEventListener('click',iconBtn)
       icon.style.display = "none";
     }
   }

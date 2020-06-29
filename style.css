@@ -19,6 +19,7 @@ header {
   width: 100%;
   padding: 30px;
   letter-spacing: 0.1em;
+  cursor: pointer;
 }
 
 ul {
@@ -74,6 +75,11 @@ img {
     display: block;
     cursor: pointer;
   }
+
+  input[type='checkbox']:checked ~input{
+    display: none;
+  }
+
 
   input[type='checkbox']:checked ~ aside{
     display: block;
