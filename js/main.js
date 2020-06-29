@@ -122,6 +122,7 @@
   const icon = document.getElementById("mobileAside");
   const menu = document.querySelector("aside");
 
+
   icon.animate([{ opacity: "0" }, { opacity: "1" }], 2000);
 
   function iconBtn() {
@@ -133,7 +134,10 @@
       icon.style.display = "block";
       menu.style.display = "block";
       menu.animate([{ opacity: "0" }, { opacity: "1" }], 1500);
-      icon.style.display = "none";
+      if(icon.checked){
+        icon.style.display = "none";
+      } else{
     }
+  }
   }
 }
