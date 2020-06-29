@@ -119,7 +119,7 @@
 
   // モバイル（レスポンシブ）
   // アイコンクリックしてメニューを表示
-  const container = document.getElementById('container');
+  const span = document.getElementById('span');
   const icon = document.getElementById("mobileAside");
   const menu = document.querySelector("aside");
 
@@ -136,7 +136,7 @@
       menu.style.display = "block";
       menu.animate([{ opacity: "0" }, { opacity: "1" }], 1500);
       if(icon.checked){
-        icon.remove();
+        span.remove();
       } else{
     }
   }
