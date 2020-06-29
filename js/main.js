@@ -136,7 +136,7 @@
       menu.style.display = "block";
       menu.animate([{ opacity: "0" }, { opacity: "1" }], 1500);
       if(icon.checked){
-        check.style.display = "none";
+        icon.style.display = "none";
       } else{
     }
   }
