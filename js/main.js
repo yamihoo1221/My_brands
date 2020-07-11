@@ -135,6 +135,7 @@
         icon.remove();
       } else {
       }
+      aside.animate([{ opacity: "0" }, { opacity: "1" }], 1500);
     }
   }
 }
