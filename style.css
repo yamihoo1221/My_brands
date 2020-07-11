@@ -30,6 +30,9 @@ header {
   letter-spacing: 0.1em;
   cursor: pointer;
 }
+header:hover {
+  color: #c49029;
+}
 
 ul {
   list-style: none;
@@ -45,6 +48,9 @@ li {
 
 span {
   cursor: pointer;
+}
+span:hover {
+  color: #c49029;
 }
 p {
   margin-bottom: 0;
