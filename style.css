@@ -15,6 +15,15 @@ body,
   box-sizing: border-box;
 }
 
+#head-wrapper {
+  display: flex;
+}
+
+.fa-github {
+  margin: 10px;
+  cursor: pointer;
+}
+
 header {
   width: 100%;
   padding: 30px;
@@ -76,11 +85,7 @@ img {
     cursor: pointer;
   }
 
-  input[type='checkbox']:checked ~input{
-  left: -50vw;
-  }
-
-  input[type='checkbox']:checked ~ aside{
+  input[type="checkbox"]:checked ~ aside {
     display: block;
   }
 
