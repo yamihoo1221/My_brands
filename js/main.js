@@ -15,11 +15,9 @@
   header.animate([{ opacity: "0" }, { opacity: "1" }], 1500);
   aside.animate([{ opacity: "0" }, { opacity: "1" }], 1500);
 
-  function doReload(){
+  function doReload() {
     window.location.reload();
   }
-
-  
 
   // NEWSここから
   function btn1() {
@@ -122,7 +120,6 @@
   const icon = document.getElementById("mobileAside");
   const menu = document.querySelector("aside");
 
-
   icon.animate([{ opacity: "0" }, { opacity: "1" }], 2000);
 
   function iconBtn() {
@@ -134,10 +131,10 @@
       icon.style.display = "block";
       menu.style.display = "block";
       menu.animate([{ opacity: "0" }, { opacity: "1" }], 1500);
-      if(icon.checked){
+      if (icon.checked) {
         icon.remove();
-      } else{
+      } else {
+      }
     }
-  }
   }
 }
